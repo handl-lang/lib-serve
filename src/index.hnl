@@ -14,8 +14,8 @@
 cap "serve.serve"
 cap "serve.serve_task"
 
-op "serve.serve": Value -> Value
+op "serve.serve": Value ~> Value
   guarantee: True
 
-op "serve.serve_task": Value -> Value
+op "serve.serve_task": Value ~> Value
   guarantee: True
