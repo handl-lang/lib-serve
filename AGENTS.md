@@ -9,7 +9,7 @@ surface. Pure `.hnl`.
 | --- | --- |
 | `src/index.hnl` | the library |
 | `pkg.hnl` | package manifest — `modules: ["serve"]` |
-| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+| `scripts/hnl-gate.sh`, `workflows/gate.yaml` | the gate / bupha entry |
 
 ## Contract
 
