@@ -1,3 +1,31 @@
+# lib-serve
+
+HTTP server around a fetch-shaped handler arrow — WinterCG/srvx-style
+surface. Pure `.hnl`.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the library |
+| `pkg.hnl` | package manifest — `modules: ["serve"]` |
+| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+
+## Contract
+
+- The `serve` contract/surface; `lib-serve-epoll` wires it to
+  `concurrent-epoll`.
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
