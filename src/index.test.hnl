@@ -1,0 +1,12 @@
+--- serve -- HTTP server contract smoke tests.
+---
+--- Contract-only repo: `cap`/`op` declarations for `serve.serve` and
+--- `serve.serve_task` surface as non-null capability values. A backend
+--- extension supplies the blocking server; nothing here is callable
+--- without one.
+
+from "./index" import * as m
+
+test_serve := assert m.serve != null
+
+test_serve_task := assert m.serve_task != null
