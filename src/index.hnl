@@ -19,3 +19,8 @@ op "serve.serve": Value ~> Value
 
 op "serve.serve_task": Value ~> Value
   guarantee: True
+
+--- Star imports bind declared exports only: re-export the op-declared
+--- capability bindings so `import * as serve` still sees the surface.
+export serve      := serve
+export serve_task := serve_task
